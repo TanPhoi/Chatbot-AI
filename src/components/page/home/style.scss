@@ -1,0 +1,129 @@
+.homee {
+    padding: 0 0 82px 80px;
+    height: 100vh;
+    .containerr {
+        padding: 20px 30px;
+        display: flex;
+        &-left {
+            width: 65%;
+            .left-top-box {
+                display: flex;
+                margin-top: 20px;
+                .card {
+                    border-radius: 14px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    padding: 27px 20px;
+                    border: 0;
+                    background-color: #ffffff;
+                    &-header {
+                        height: 35px;
+                        width: 35px !important;
+                        border-radius: 50% !important;
+                    }
+                    .news-icon {
+                        color: #534999;
+                        background-color: #efefff;
+                    }
+                    .back-icon {
+                        background-color: #f0fff3;
+                        color: #209655;
+                    }
+                    .weather-icon {
+                        background-color: #f3fbff;
+                        color: #5577c9;
+                    }
+                    .bitcoin-icon {
+                        background-color: #fff4f1;
+                        color: #e4a291;
+                    }
+                    &-title {
+                        font-size: 16px;
+                        margin-top: 25px;
+                        color: #424242;
+                        font-weight: 400;
+                    }
+                    &-text {
+                        color: rgb(61, 59, 59);
+                        margin-top: 17px;
+                        font-size: 19px;
+                        font-weight: 500;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        &-right {
+            width: 35%;
+        }
+    }
+}
+@media screen and(max-width:1300px) {
+    .containerr {
+        padding: 35px 20px;
+        flex-direction: column;
+        &-left {
+            padding-left: 20px;
+            width: 100% !important;
+        }
+        &-right {
+            width: auto !important;
+        }
+    }
+}
+@media screen and(max-width:900px) {
+    .left-top-box {
+        flex-wrap: wrap;
+        .card {
+            margin-bottom: 10px;
+            width: calc(50% - 20px) !important;
+        }
+        .card-text {
+            font-weight: 400 ;
+            font-size: 13px !important;
+            margin-top: 0 !important;
+        }
+        .card-title {
+            margin-top: 10px !important;
+        }
+    }
+        .box-detail {
+            margin-left: 20px;
+            width: 90% !important;
+        }
+        .sidebar {
+            display: none;
+        }
+        .sibar-weather {
+            padding-left: 0 !important;
+        }
+        .homee {
+            padding: 0 !important;
+        }
+        .containerr {
+            padding:30px 0 !important;
+        }
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    border: 0 !important;
+}
+// Custom scrollbar
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset #a6afe0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    height: 50px;
+    -webkit-box-shadow: inset 0px 0px 6px rgba(160, 200, 241, 0.5);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
